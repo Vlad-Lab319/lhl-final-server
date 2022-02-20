@@ -1,4 +1,4 @@
-// require("dotenv").config();
+require("dotenv").config();
 // const socketServer = require("./socketServer");
 const express = require("express");
 const bcrypt = require("bcryptjs");
@@ -16,7 +16,7 @@ app.use(
   })
 );
 
-const PORT = 8080;
+const PORT = process.env.SERVER_PORT || 8080;
 
 const usersRoutes = require("./routes/users");
 const roomsRoutes = require("./routes/rooms");
