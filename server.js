@@ -1,4 +1,4 @@
-require("dotenv").config();
+// require("dotenv").config();
 // const socketServer = require("./socketServer");
 const express = require("express");
 const bcrypt = require("bcryptjs");
